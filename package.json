@@ -1,6 +1,6 @@
 {
   "name": "@flet/xml-nodes",
-  "version": "0.1.5",
+  "version": "1.0.0",
   "description": "Streaming XML node splitter",
   "repository": {
     "type": "git",
