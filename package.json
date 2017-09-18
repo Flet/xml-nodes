@@ -1,5 +1,5 @@
 {
-  "name": "xml-nodes",
+  "name": "@flet/xml-nodes",
   "version": "0.1.5",
   "description": "Streaming XML node splitter",
   "repository": {
