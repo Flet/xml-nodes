@@ -4,7 +4,7 @@ var test = require('tap').test
 
 test('xmlNodes', function(t) {
   var count = 0
-  
+
   t.plan(1)
 
   fs.createReadStream(__dirname + '/mrss.xml')
@@ -19,7 +19,7 @@ test('xmlNodes', function(t) {
 })
 
 test('nested nodes', function(t) {
-  t.plan(2)
+  t.plan(3)
 
   fs.createReadStream(__dirname + '/nested.xml')
     .pipe(xmlNodes('item'))

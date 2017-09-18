@@ -19,9 +19,18 @@
 </item>
 <item>
   <title>Al-Jazeera America prepares for Tuesday launch</title>
-  <item>
     <item>Look at me, I'm hella nested!</item>
-  </item>
+</item>
+<item>
+  <title>Al-Jazeera America prepares for Tuesday launch</title>
+    <item>Look at me, I'm hella nested!</item>
+    <item>Look at me, I'm hella nested!</item>
+    <item>Look at me, I'm hella nested!</item>
+    <item>
+      <item>Look at me, I'm hella nested!</item>
+      <item>Look at me, I'm hella nested!</item>
+    </item>
+    <item>Look at me, I'm hella nested!</item>
 </item>
 </channel>
 </rss>
