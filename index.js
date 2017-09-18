@@ -46,17 +46,20 @@ XmlNodes.prototype.getNodes = function(nodes) {
 
 XmlNodes.prototype.getNestedCount = function(str) {
   var openingIndex = this.getOpeningIndex(str)
-    , firstClosingIndex = str.indexOf('</'+this.nodeName+'>')
+    , closingIndex = str.indexOf('</'+this.nodeName+'>')
     , currentIndex = openingIndex + 1
     , count = 0
 
-  if (!firstClosingIndex) return false
+  if (!closingIndex) return false
 
-  while (currentIndex < firstClosingIndex) {
+  while (currentIndex < closingIndex) {
     currentIndex = this.getOpeningIndex(str, currentIndex + 1)
 
     if (currentIndex === -1) break
-    if (currentIndex < firstClosingIndex) count++
+    if (currentIndex < closingIndex) {
+      count++
+      closingIndex = this.getClosingIndex(str, count)
+    }
   }
 
   return count
